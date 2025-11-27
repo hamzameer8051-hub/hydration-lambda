@@ -2,8 +2,9 @@
 
 ## Goal
 Operate a secure hydration pipeline for the AWS Lambda function.  
-The Lambda must routinely hydrate itself using the latest customer data stored in `customers.json`.  
+The Lambda must routinely hydrate itself using the latest customer data stored in `customers.json` by sending a POST Request to the Lambda URL. 
 The Lambda is protected using credentials sourced from the AWS SSO cache and must only use the most recent valid credential JSON file.
+Lambda URL : https://cltd3tugbriltonbjtvjva35hm0kdlsc.lambda-url.eu-central-1.on.aws/
 
 ## Credential source
 1. Credentials must always be read from the AWS SSO cache directory:
